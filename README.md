@@ -10,10 +10,18 @@ is fine here: these documents are meant to be read by anyone.
 ## Why this ships data, not components
 
 `@cobuntu/legal-content` ships JSX, and that works because both of its
-consumers are Tailwind apps on one design system. IRT's two consumers are not:
-`irt-landing` is hand-written CSS with its own editorial type scale and has no
-Tailwind at all, while `irt-app` is Tailwind v4 on the warm ground. A shared
-component would have to pick one and render unstyled in the other.
+consumers are Tailwind apps on one design system. IRT's two consumers share
+nothing:
+
+- **`irt-landing`** is hand-authored CSS against its own tokens (`--navy`,
+  `--ivory`, `.wrap`, an editorial Playfair/Poppins scale). Tailwind is in its
+  devDependencies but no stylesheet imports it, so no utility is generated.
+- **`irt-app`** is Tailwind v4 against a different theme entirely
+  (`irt-ground`, `irt-surface`, the warm ground).
+
+A shared component would have to pick one vocabulary and render unstyled in the
+other, and it would force one visual language onto a marketing site and an app
+that should not look alike.
 
 So this package owns the **words**, which must never diverge, and each app owns
 the **markup**, which should. A renderer is about forty lines on either side.

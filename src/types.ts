@@ -4,12 +4,17 @@
  * ── Why this package ships DATA and not components ─────────────────────────
  *
  * `@cobuntu/legal-content` ships JSX, and that works there because both of its
- * consumers are Tailwind apps sharing one design system. IRT's two consumers do
- * not: `irt-landing` is hand-written CSS with its own editorial type scale and
- * has no Tailwind at all, while `irt-app` is Tailwind v4 on the warm ground.
- * A shared component would have to pick one, and the other would render it
- * unstyled — which is precisely the failure mode the Cobuntu package documents
- * for a missing `@source` line.
+ * consumers are Tailwind apps sharing one design system. IRT's two consumers
+ * share nothing. `irt-landing` is written in hand-authored CSS against its own
+ * tokens (--navy, --ivory, .wrap, an editorial Playfair/Poppins scale); it has
+ * Tailwind in devDependencies but no stylesheet imports it, so no utility is
+ * ever generated there. `irt-app` is Tailwind v4 against a different theme
+ * entirely (irt-ground, irt-surface, the warm ground).
+ *
+ * A shared component would have to pick one vocabulary and render unstyled in
+ * the other, which is precisely the failure the Cobuntu package documents for
+ * a missing `@source` line, and it would also force one visual language onto
+ * two surfaces that should not look alike: a marketing site and an app.
  *
  * So the package owns the WORDS, which is the thing that must never diverge,
  * and each app owns the markup, which is the thing that should. A renderer is
