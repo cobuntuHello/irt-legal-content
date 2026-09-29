@@ -68,4 +68,4 @@ export const PLATFORM = {
  * the Portuguese and the English should not find two. Bump it when the text
  * changes; leave it alone when only a renderer does.
  */
-export const LAST_UPDATED = "2026-09-24";
+export const LAST_UPDATED = "2026-09-29";

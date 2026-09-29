@@ -316,7 +316,7 @@ export const privacyEn: LegalDoc = {
       blocks: [
         {
           kind: "p",
-          text: "IRT® uses no analytics cookies, no advertising cookies and no third-party cookies. There is no Google Analytics, no social pixel and nothing that follows you between sites. We use two cookies, both strictly necessary, which is why we do not ask you to consent to them:",
+          text: "IRT® uses no analytics cookies, no advertising cookies and no third-party cookies. There is no Google Analytics, no social pixel and nothing that follows you between sites. We use two cookies and one other piece of storage in your browser, all strictly necessary, which is why we do not ask you to consent to them:",
         },
         {
           kind: "table",
@@ -333,6 +333,12 @@ export const privacyEn: LegalDoc = {
               "Public site",
               "Remember the language you picked, so it does not revert on each visit",
               "1 year",
+            ],
+            [
+              "Leadership Snapshot® answers in progress",
+              "Application",
+              "Hold your answers as you go, so closing the page does not cost you the ones you have given. Kept in your browser's local storage, not in a cookie, and not sent to us until you submit",
+              "Until you submit, or until you clear your browser",
             ],
           ],
         },

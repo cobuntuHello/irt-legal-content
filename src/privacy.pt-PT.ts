@@ -326,7 +326,7 @@ export const privacyPtPT: LegalDoc = {
       blocks: [
         {
           kind: "p",
-          text: "O IRT® não usa cookies de análise, de publicidade nem de terceiros. Não há Google Analytics, não há píxeis de redes sociais e não há nada que o siga entre sítios. Usamos dois cookies, ambos estritamente necessários, e por isso não lhe pedimos consentimento para eles:",
+          text: "O IRT® não usa cookies de análise, de publicidade nem de terceiros. Não há Google Analytics, não há píxeis de redes sociais e não há nada que o siga entre sítios. Usamos dois cookies e um outro armazenamento no seu navegador, todos estritamente necessários, e por isso não lhe pedimos consentimento para eles:",
         },
         {
           kind: "table",
@@ -343,6 +343,12 @@ export const privacyPtPT: LegalDoc = {
               "Sítio público",
               "Lembrar o idioma que escolheu, para não voltar ao português a cada visita",
               "1 ano",
+            ],
+            [
+              "Respostas em curso ao Leadership Snapshot®",
+              "Aplicação",
+              "Guardar as suas respostas à medida que avança, para que fechar a página não lhe custe as que já deu. Fica no armazenamento local do seu navegador, não num cookie, e não chega até nós enquanto não submeter",
+              "Até submeter, ou até limpar o navegador",
             ],
           ],
         },
