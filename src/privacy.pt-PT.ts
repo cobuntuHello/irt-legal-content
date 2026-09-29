@@ -126,6 +126,12 @@ export const privacyPtPT: LegalDoc = {
               "Enquanto tiver acesso ao IRT®. A comparabilidade entre ciclos é o produto: um resultado apagado torna o seguinte ilegível",
             ],
             [
+              "Respostas em curso, enquanto ainda está a responder ao Snapshot",
+              "Poder fechar a aplicação a meio e retomar onde ficou, no telemóvel ou no computador",
+              "Execução do contrato",
+              "Apagadas assim que submete. Se nunca chegar a submeter, apagadas 90 dias depois da última alteração",
+            ],
+            [
               "Ciclo, Missões atribuídas, estado de cada uma e datas",
               "Conduzir o programa de seis meses",
               "Execução do contrato",
@@ -424,6 +430,11 @@ export const privacyPtPT: LegalDoc = {
           rows: [
             ["Sessão iniciada", "11 horas", "O cookie expira"],
             ["Ficheiros anexados à MIA", "30 dias", "Apagados por um processo diário automático"],
+            [
+              "Respostas em curso ao Snapshot, se nunca submeter",
+              "90 dias desde a última alteração",
+              "Apagadas pelo varrimento diário. Submeter apaga-as logo",
+            ],
             ["Cópia do seu email", "90 dias sem entrar, sem ciclo ativo", "Apagada pelo varrimento diário"],
             ["Conversas com a MIA", "Até as apagar", "Decide você. Não há prazo"],
             [

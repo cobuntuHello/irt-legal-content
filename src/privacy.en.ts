@@ -116,6 +116,12 @@ export const privacyEn: LegalDoc = {
               "For as long as you have access to IRT®. Comparability across cycles is the product: a deleted result makes the next one unreadable",
             ],
             [
+              "Answers in progress, while you are still taking the Snapshot",
+              "So you can close the app half way through and pick up where you left off, on your phone or your computer",
+              "Performance of a contract",
+              "Deleted as soon as you submit. If you never submit, deleted 90 days after the last change",
+            ],
+            [
               "Cycle, assigned Missions, the status of each and the dates",
               "Run the six-month programme",
               "Performance of a contract",
@@ -406,6 +412,11 @@ export const privacyEn: LegalDoc = {
           rows: [
             ["Signed-in session", "11 hours", "The cookie expires"],
             ["Files attached to MIA", "30 days", "Deleted by an automatic daily process"],
+            [
+              "Snapshot answers in progress, if you never submit",
+              "90 days from the last change",
+              "Deleted by the daily sweep. Submitting deletes them at once",
+            ],
             [
               "The copy of your email",
               "90 days without signing in, no active cycle",

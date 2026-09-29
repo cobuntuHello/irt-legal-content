@@ -1,6 +1,6 @@
 {
   "name": "@irt/legal-content",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "The IRT Leadership Platform's Privacy Policy and Terms of Use, as data, shared by irt-landing and irt-app.",
   "license": "UNLICENSED",
   "private": false,
